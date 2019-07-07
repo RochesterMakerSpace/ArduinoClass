@@ -4,12 +4,12 @@
  */
 
 // Initialize the Arduino
-setup() {
+void setup() {
   pinMode(12,OUTPUT);
 }
 
 // Loop forever checking the status of the photoresistor and controlling the LED
-loop() {
+void loop() {
 	// Read the photoresistor value (0-1024)
     int sensorValue = analogRead(A0);
 
